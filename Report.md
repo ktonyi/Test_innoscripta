@@ -1,4 +1,4 @@
-## Тестовое задание для компании 
+## Test task 
 ## Innoscripta
 Watch videos: 
 - Find as many bugs as u can;
@@ -7,49 +7,50 @@ Watch videos:
 - If you have any proposals to enhance the system - feel free to write them.
 
 
-### Тестирование crm системы по заранее записанным видео с описанием функциональности:
+### Testing a crm system using pre-recorded videos with a description of the functionality:
 
-# Баг-1
-## Описание: В меню выбора отображена пустая кнопка.
-### Шаги воспроизведения:
-1. Открыть http://crm.innoscripta.com/login
-2. Войти в систему используя валидные данные пользователя.
-- Ожидаемый результат: Все кнопки в меню имеют присвоенное значение.
-- Фактический результат: В меню отображается пустая кнопка.
+# Bug-1
+## Description: An empty button is displayed in the selection menu.
+### STR:
+1. Go to http://crm.innoscripta.com/login
+2. Login to the system using valid user data
+- Expected Result: All buttons in the menu have an assigned value.
+- Actual result: An empty button is displayed in the menu
+.
 ![](https://user-images.githubusercontent.com/77203425/142514946-4f1eba58-7122-4740-ab8d-0aee49f3b086.png)
-### Окружение:
+### Environment:
  Win 7,
-Google chrome Версия 96.0.4664.45 
+Google chrome  96.0.4664.45 
 Video 1
 
 
-# Баг-2
-## Описание: Текст выходит за границы после смены вида отображения.
-### Предусловие: Необходимо авторизоваться в http://crm.innoscripta.com/login
-### Шаги воспроизведения:
-1. Перейти по Revenue and Planning в раздел Ideen.
-2. Изменить отображение нажав на кнопку под Change View.
-- Ожидаемый результат: Текст описания отображается ровно.
-- Фактический результат: Текст описания выходит за границы и наслаивается на следующий.
+# Bug -2
+## Description: The text is out of bounds after changing the display type.
+### Precondition: You must log in to http://crm.innoscripta.com/login
+### STR:
+1. Go to Revenue and Planning to the Ideen section.
+2. Change the display by clicking on the button under Change View.
+- Expected Result: The description text is displayed smoothly.
+- Actual result: The text of the description goes beyond the boundaries and is layered on the next one.
 ![](https://user-images.githubusercontent.com/77203425/142514947-18b2459e-0aab-4aa9-bd5e-46571a6ab3b9.png) 
-### Окружение:
+### Environment:
  Win 7,
-Google chrome Версия 96.0.4664.45 
+Google chrome  96.0.4664.45 
 Video 2
 
 
 
-# Баг-3
-## Описание: Языковое несоответствие в разделе RP.
-### Предусловие: Необходимо авторизоваться в http://crm.innoscripta.com/login
-### Шаги воспроизведения:
-1. Перейти по Revenue and Planning
-- Ожидаемый результат: Все кнопки меню отображены на Английском языке.
-- Фактический результат: Кнопка Ideen – немецкий язык.
+# Bug-3
+## Description: Language inconsistency in RP section.
+### Precondition: You must log in to http://crm.innoscripta.com/login
+### STR:
+1. Go to Revenue and Planning
+- Expected Result: All menu buttons are displayed in English.
+- Actual result: Button Ideen - German.
 ![](https://user-images.githubusercontent.com/77203425/142514949-258a4ded-f333-4642-a3ba-8e6548092b4b.png)
-### Окружение:
+### Environment:
  Win 7,
-Google chrome Версия Версия 96.0.4664.45 
+Google chrome  96.0.4664.45 
 Video 2
 
 
@@ -58,7 +59,7 @@ Video 2
 
 
 
-## Часть 2
+## Part 2
 ### Inspect those sites: 
 - http://sff.innoscripta.com/ 
 - http://ideas.innoscripta.com/ 
@@ -66,62 +67,62 @@ Video 2
 #### Find as many bugs as you can and record them, create bug records.
 
 
-# Баг – 1
-### Описание: Поле ввода принимает не валидные значения email.
-### Шаги воспроизведения:
-1. Перейти на сайт https://sff.innoscripta.com/
-2. Пролистать вниз до поля ввода с надписью «Wir stellen mit Ihnen in einem unverbindlichen Termin fest, ob wir zueinander passen»
-3. Ввести валидные значения в поле Varname Nachname
-4. В поле email ввести «2»
-5. Нажать «Absenden»
+# Bug-1
+### Description: The input field accepts invalid email values.
+### STR:
+1. Go to the website https://sff.innoscripta.com/
+2. Scroll down to the input field with the inscription "Wir stellen mit Ihnen in einem unverbindlichen Termin fest, ob wir zueinander passen"
+3. Enter valid values ​​in the Varname Nachname field
+4. In the email field, enter "2"
+5. Press "Absenden"
 
-- Ожидаемый результат: Поле ввода email подчеркнуто красным, появляется сообщение о допустимом вводе.
-- Фактический результат: Открывается окно для заполнения данных.
+- Expected Result: The email input field is underlined in red, a valid input message appears.
+- Actual result: A window for filling in the data is opened.
 
-![](https://user-images.githubusercontent.com/77203425/142514937-70dac86f-8ecb-46f3-abfb-27a1e869ab9d.mp4)
-### Окружение:
+https://user-images.githubusercontent.com/77203425/142514937-70dac86f-8ecb-46f3-abfb-27a1e869ab9d.mp4
+### Environment:
  Win 7,
-Google chrome Версия 96.0.4664.45
+Google chrome  96.0.4664.45
 
 
 
 
-# Баг – 2
-### Описание: Некорректные названия университета в выпадающем списке. 
-### Шаги воспроизведения:
-1. Перейти на сайт http://ideas.innoscripta.com/
-2. Нажать на кнопку «Registrieren»
-3. В появившемся окне открыть выпадающий список 
+# Bug-2
+### Description: Incorrect university names in the drop-down list.
+### STR:
+1. Go to the site http://ideas.innoscripta.com/
+2. Press the button "Registrieren"
+3. In the opened window , open the drop-down list.
 
 
-- Ожидаемый результат: Указаны корректные названия университетов.
-- Фактический результат: В списке присутствуют некорректные названия.
+- Expected Result: The correct university names have been provided.
+- Actual result: Incorrect names are present in the list.
 ![](https://user-images.githubusercontent.com/77203425/142514945-3456cba7-13ba-4ed3-98b5-495fe6542bdf.png)
 ![](https://user-images.githubusercontent.com/77203425/142514943-d2ef9d3e-f25b-488f-8124-0801c824098b.png)
-### Окружение:
+### Environment:
  Win 7,
-Google chrome Версия 96.0.4664.45 
+Google chrome  96.0.4664.45 
 
 
 
-# Баг – 3
-### Описание: Некорректные названия университета в выпадающем списке. 
-### Шаги воспроизведения:
-1. Перейти на сайт http://ideas.innoscripta.com/
-2. Нажать на кнопку «Registrieren»
-3. В появившемся окне заполнить поля валидными данными
-4. В поле «telefon» поставить знак «+».
-5. Нажать «Weiter» 
+# Bug - 3
+### Description: Incorrect university names in the drop-down list.
+### STR:
+1. Go to  http://ideas.innoscripta.com/
+2. Press the button "Registrieren".
+3. In the opened window, fill in the fields with valid data.
+4. In the field "telefon" put a "+" sign.
+5. Press "Weiter"
 
 
-- Ожидаемый результат: Поле телефон подчеркнуто красным появляется сообщение о ошибке.
-- Фактический результат: Форма успешно заполняется.
+- Expected Result: The telephone underlined in red field displays an error message.
+- Actual result: The form is completed successfully.
 
-![](https://user-images.githubusercontent.com/77203425/142514921-3a645769-48c2-47e8-8d6b-f14c20140f79.mp4
-)
-### Окружение:
+https://user-images.githubusercontent.com/77203425/142514921-3a645769-48c2-47e8-8d6b-f14c20140f79.mp4
+
+### Environment:
  Win 7,
-Версия 96.0.4664.45 
+Goofle hrome 96.0.4664.45 
 
 to be end
 
